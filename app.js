@@ -26,6 +26,7 @@ const mongo_user = process.env.MONGODB_USER;
 const mongo_pwd = process.env.MONGODB_PASSWORD;
 const mongo_dbName = process.env.MONGODB_DBNAME;
 
+mongoose.set("strictQuery", false);
 // ---- Appel de mongoose pour se connecter à la DB ---- //
 mongoose
   .connect(
